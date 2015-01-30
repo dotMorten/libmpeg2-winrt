@@ -101,7 +101,7 @@
       <AdditionalDependencies>runtimeobject.lib;mf.lib;mfuuid.lib;mfplat.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>mdmerge -metadata_dir "$(WindowsSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
+      <Command>mdmerge -metadata_dir "$(WindowsPhoneSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
       <Outputs>$(ProjectDir)$(Configuration)\$(ProjectName)\$(ProjectName).winmd</Outputs>
     </CustomBuildStep>
     <Midl>
@@ -125,14 +125,14 @@
       <AdditionalDependencies>runtimeobject.lib;mf.lib;mfuuid.lib;mfplat.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>mdmerge -metadata_dir "$(WindowsSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
+      <Command>mdmerge -metadata_dir "$(WindowsPhoneSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
       <Outputs>$(ProjectDir)$(Configuration)\$(ProjectName)\$(ProjectName).winmd</Outputs>
     </CustomBuildStep>
     <Midl>
       <HeaderFileName>libmpeg2.h</HeaderFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -149,14 +149,14 @@
       <AdditionalDependencies>runtimeobject.lib;mf.lib;mfuuid.lib;mfplat.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>mdmerge -metadata_dir "$(WindowsSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
+      <Command>mdmerge -metadata_dir "$(WindowsPhoneSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
       <Outputs>$(ProjectDir)$(Configuration)\$(ProjectName)\$(ProjectName).winmd</Outputs>
     </CustomBuildStep>
     <Midl>
       <HeaderFileName>libmpeg2.h</HeaderFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -173,7 +173,7 @@
       <AdditionalDependencies>runtimeobject.lib;mf.lib;mfuuid.lib;mfplat.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>mdmerge -metadata_dir "$(WindowsSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
+      <Command>mdmerge -metadata_dir "$(WindowsPhoneSDK_MetadataPath)" -o "$(ProjectDir)$(Configuration)\$(ProjectName)" -i "$(MSBuildProjectDirectory)" -v -partial</Command>
       <Outputs>$(ProjectDir)$(Configuration)\$(ProjectName)\$(ProjectName).winmd</Outputs>
     </CustomBuildStep>
     <Midl>
