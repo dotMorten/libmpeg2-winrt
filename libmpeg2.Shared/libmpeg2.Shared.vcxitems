@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>662276ee-b705-409f-a151-33a4d4bb019c</SharedGUID>
+    <ItemsProjectGuid>{0989c35e-3c2b-4116-8eb9-99bfafd40df7}</ItemsProjectGuid>
+    <ItemsRootNamespace>libmpeg2.Shared</ItemsRootNamespace>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)alloc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)common.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)cpu_accel.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)cpu_state.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)decode.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)decoder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)decoder_mf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)dllmain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)header.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)idct.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)idct_mmx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)motion_comp.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)motion_comp_mmx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)process.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)rgb.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)rgb_mmx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)slice.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)uyvy.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)attributes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)convert_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)decoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)inttypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mmx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpeg2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpeg2convert.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpeg2_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)process.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vlc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)libmpeg2.txt">
+      <DeploymentContent>false</DeploymentContent>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)libmpeg2.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="$(MSBuildThisFileDirectory)libmpeg2.idl" />
+  </ItemGroup>
+</Project>

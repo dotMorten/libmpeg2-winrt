@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libmpeg2">
+      <UniqueIdentifier>{c11fd78c-fd16-45ae-abca-906ad990a274}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)alloc.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)cpu_accel.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)cpu_state.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)decode.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)header.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)idct.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)idct_mmx.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)motion_comp.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)motion_comp_mmx.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)rgb.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)rgb_mmx.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)slice.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)uyvy.c">
+      <Filter>libmpeg2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)dllmain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)decoder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)common.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)decoder_mf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)process.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)config.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)convert_internal.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)inttypes.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)mmx.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpeg2.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpeg2_internal.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpeg2convert.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)vlc.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)attributes.h">
+      <Filter>libmpeg2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)decoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)process.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)libmpeg2.txt">
+      <Filter>libmpeg2</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)libmpeg2.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="$(MSBuildThisFileDirectory)libmpeg2.idl" />
+  </ItemGroup>
+</Project>
